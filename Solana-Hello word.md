@@ -71,3 +71,55 @@ solana balance
 solana airdrop 2
 
 ```
+
+## solana-web3 程序启动
+
+### 1. 启动 rust 程序
+
+```sh
+cd src/program-rust/
+cargo build-bpf
+
+# 构建完成后，src/program-rust/target/deploy 目录下的 helloworld.so 就是可在 Solana 集群部署的链上程序的 BPF 字节码文件。
+```
+
+### 2. 启动 localhost 集群
+
+```sh
+solana config set --url localhost
+
+# 启动集群
+solana-test-validator
+```
+
+### client react 程序
+
+```sh
+
+```
+
+## 部署链上程序
+
+在 localhost 集群上部署链上程序。
+
+```sh
+solana program deploy target/deploy/helloword.so
+
+// Program Id: 6AArMEBpFhhtU2mBnEMEPeEH7xkhfUwPseUeG4fhLYto
+```
+
+## 调用链上程序
+
+```sh
+cd solana-web3
+npm install
+
+# PROGRAM_PATH 的路径由“../../dist/program”改为“../program-rust/target/deploy”。
+npm run start
+```
+
+查看日志
+
+```sh
+solana logs
+```
