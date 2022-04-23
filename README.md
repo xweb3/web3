@@ -5,7 +5,6 @@
 - [solana doc](https://docs.solana.com/terminology)
 
 - [智能合约](https://solidity-cn.readthedocs.io/zh/develop/introduction-to-smart-contracts.html#simple-smart-contract)
-- [web3js](https://web3js.readthedocs.io/en/v1.3.4/getting-started.html)
 
 
 
@@ -28,3 +27,8 @@
 
 ### 智能合约 编写
 
+
+## eth 链
+
+
+- [web3js](https://web3js.readthedocs.io/en/v1.3.4/getting-started.html)
