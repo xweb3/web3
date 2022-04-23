@@ -26,9 +26,29 @@ https://solana.wiki/zh-cn/docs/account-model/
 
 Solana CLI 是与 Solana 集群进行交互的命令行管理工具，包含节点程序 solana-validator、密钥对生成工具 solana-keygen，以及合约开发工具 cargo-build-bpf、cargo-test-bpf 等。
 
+
 ```sh
 sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
 
+# 出现
+  ✨ stable commit a41a814 initialized
+Adding 
+export PATH="/Users/x/.local/share/solana/install/active_release/bin:$PATH" to /Users/x/.profile
+Adding 
+export PATH="/Users/x/.local/share/solana/install/active_release/bin:$PATH" to /Users/x/.zprofile
+Adding 
+export PATH="/Users/x/.local/share/solana/install/active_release/bin:$PATH" to /Users/x/.bash_profile
+
+Close and reopen your terminal to apply the PATH changes or run the following in your existing shell:
+  
+export PATH="/Users/x/.local/share/solana/install/active_release/bin:$PATH"
+
+web3 % export PATH="/Users/x/.local/share/solana/install/active_release/bin:$PATH"
+
+# 安装成功
+```
+
+```sh
 solana --version
 
 solana-install update
@@ -53,6 +73,43 @@ solana config set --url localhost
 // 选择devnet集群
 solana config set --url devnet
 ```
+
+### 连接Mainnet Beta(主网 Beta)
+
+```sh
+# 首先要生成身份信息，通过运行以下操作为你的验证节点创建身份密钥：
+
+solana-keygen new -o ~/validator-keypair.json
+
+# 运行后通过以下命令查看身份公钥是否创建成功：
+
+solana-keygen pubkey ~/validator-keypair.json
+
+# 然后运行以下节点命令：
+
+solana-validator \
+    --identity ~/validator-keypair.json \
+    --trusted-validator 7Np41oeYqPefeNQEHSv1UDhYrehxin3NStELsSKCT4K2 \
+    --trusted-validator GdnSyH3YtwcxFvQrVVJMm1JhTS4QVX7MFsX56uJLUfiZ \
+    --trusted-validator DE1bawNcRJB9rVm3buyMVfr8mBEoyyu73NBovf2oXJsJ \
+    --trusted-validator CakcnaRDHka2gXyfbEd2d3xsvkJkqsLw2akB3zsN1D2S \
+    --no-untrusted-rpc \
+    --ledger ~/validator-ledger \
+    --rpc-port 8899 \
+    --private-rpc \
+    --no-port-check \
+    --dynamic-port-range 8000-8012 \
+    --entrypoint entrypoint.mainnet-beta.solana.com:8001 \
+    --entrypoint entrypoint2.mainnet-beta.solana.com:8001 \
+    --entrypoint entrypoint3.mainnet-beta.solana.com:8001 \
+    --entrypoint entrypoint4.mainnet-beta.solana.com:8001 \
+    --entrypoint entrypoint5.mainnet-beta.solana.com:8001 \
+    --expected-genesis-hash 5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d \
+    --wal-recovery-mode skip_any_corrupted_record \
+    --limit-ledger-size\
+    --log -
+```
+
 
 ### 创建账户
 
