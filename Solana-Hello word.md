@@ -131,8 +131,14 @@ solana airdrop 2
 
 ## solana-web3 程序启动
 
+### 创建命令列使用的密钥对
 
-### 1. 启动 localhost 集群
+如果这是你第一次使用 solana 命令列，你先得生成一个新的密钥对
+
+```bash
+solana-keygen new
+```
+### 启动 localhost 集群
 
 ```sh
 solana config set --url localhost
@@ -142,29 +148,27 @@ solana-test-validator
 ```
 
 
-### 2. 打包 rust 程序
+### 打包 rust 程序
 
 ```sh
-cd src/program-rust/
-cargo build-bpf
+cd solana-web3
+npm run build:program-rust
 
 # 构建完成后，src/program-rust/target/deploy 目录下的 helloworld.so 就是可在 Solana 集群部署的链上程序的 BPF 字节码文件。
 ```
-## 部署链上程序
+### 部署链上程序
 
 在 localhost 集群上部署链上程序。
 
 ```sh
-solana program deploy target/deploy/helloword.so
+solana program deploy dist/program/helloword.so
 
 // Program Id: 6AArMEBpFhhtU2mBnEMEPeEH7xkhfUwPseUeG4fhLYto
 ```
 
+### 调用链上程序
 
-
-## 调用链上程序
-
-### client react 程序
+#### client react 程序
 
 ```sh
 cd solana-web3
