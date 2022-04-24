@@ -40,8 +40,8 @@ let greetedPubkey: PublicKey;
 /**
  * Path to program files
  */
-// const PROGRAM_PATH = path.resolve(__dirname, '../../dist/program');
-const PROGRAM_PATH = path.resolve(__dirname, '../program-rust/target/deploy')
+const PROGRAM_PATH = path.resolve(__dirname, '../../dist/program');
+// const PROGRAM_PATH = path.resolve(__dirname, '../program-rust/target/deploy')
 
 /**
  * Path to program shared object file which should be deployed on chain.
@@ -50,7 +50,7 @@ const PROGRAM_PATH = path.resolve(__dirname, '../program-rust/target/deploy')
  *   - `npm run build:program-rust`
  */
 const PROGRAM_SO_PATH = path.join(PROGRAM_PATH, 'helloworld.so');
-
+console.log('PROGRAM_SO_PATH', PROGRAM_SO_PATH);
 /**
  * Path to the keypair of the deployed program.
  * This file is created when running `solana program deploy dist/program/helloworld.so`
