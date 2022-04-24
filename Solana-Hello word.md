@@ -131,16 +131,8 @@ solana airdrop 2
 
 ## solana-web3 程序启动
 
-### 1. 启动 rust 程序
 
-```sh
-cd src/program-rust/
-cargo build-bpf
-
-# 构建完成后，src/program-rust/target/deploy 目录下的 helloworld.so 就是可在 Solana 集群部署的链上程序的 BPF 字节码文件。
-```
-
-### 2. 启动 localhost 集群
+### 1. 启动 localhost 集群
 
 ```sh
 solana config set --url localhost
@@ -149,12 +141,15 @@ solana config set --url localhost
 solana-test-validator
 ```
 
-### client react 程序
+
+### 2. 打包 rust 程序
 
 ```sh
+cd src/program-rust/
+cargo build-bpf
 
+# 构建完成后，src/program-rust/target/deploy 目录下的 helloworld.so 就是可在 Solana 集群部署的链上程序的 BPF 字节码文件。
 ```
-
 ## 部署链上程序
 
 在 localhost 集群上部署链上程序。
@@ -165,17 +160,65 @@ solana program deploy target/deploy/helloword.so
 // Program Id: 6AArMEBpFhhtU2mBnEMEPeEH7xkhfUwPseUeG4fhLYto
 ```
 
+
+
 ## 调用链上程序
+
+### client react 程序
 
 ```sh
 cd solana-web3
 npm install
-
-# PROGRAM_PATH 的路径由“../../dist/program”改为“../program-rust/target/deploy”。
-npm run start
 ```
 
-查看日志
+```sh
+npm run start
+
+> helloworld@0.0.1 start
+> ts-node src/client/main.ts
+
+PROGRAM_SO_PATH /Users/x/web3/doc/solana-web3/dist/program/helloworld.so
+Let's say hello to a Solana account...
+FetchError: request to http://localhost:8899/ failed, reason: connect ECONNREFUSED ::1:8899
+    at ClientRequest.<anonymous> (/Users/x/web3/doc/solana-web3/node_modules/node-fetch/lib/index.js:1491:11)
+    at ClientRequest.emit (node:events:527:28)
+    at ClientRequest.emit (node:domain:475:12)
+    at Socket.socketErrorListener (node:_http_client:454:9)
+    at Socket.emit (node:events:527:28)
+    at Socket.emit (node:domain:475:12)
+    at emitErrorNT (node:internal/streams/destroy:164:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  type: 'system',
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED'
+}
+```
+
+出现以上错误，因为 node 17 版本的问题，将版本改成 16 ，运行
+
+```sh
+n 16.8.0
+```
+
+```sh
+npm run start
+
+> helloworld@0.0.1 start
+> ts-node src/client/main.ts
+
+PROGRAM_SO_PATH /Users/x/web3/doc/solana-web3/dist/program/helloworld.so
+Let's say hello to a Solana account...
+Connection to cluster established: http://localhost:8899 { 'feature-set': 1070292356, 'solana-core': '1.9.18' }
+Using account HmNo3qAyyEEPYYpGgpBkmyB3chz7gLTTdzje4YH7FWAR containing 499999998.73823273 SOL to pay for fees
+Using program ECQ1PLPHnSp8hLfMuatGE7SRS6CTrqroSXygfQvsK3H1
+Creating account 6ovHkNwquAMJeDxsAXn55Fq3AXQnDc199Ne8U6xsNQuM to say hello to
+Saying hello to 6ovHkNwquAMJeDxsAXn55Fq3AXQnDc199Ne8U6xsNQuM
+6ovHkNwquAMJeDxsAXn55Fq3AXQnDc199Ne8U6xsNQuM has been greeted 1 time(s)
+Success
+```
+
+## 查看日志
 
 ```sh
 solana logs
