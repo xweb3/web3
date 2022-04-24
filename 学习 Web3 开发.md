@@ -69,6 +69,36 @@ Web3 • http://useweb3.xyz
 
 
 
+## The Web3 & Blockchain Stack  🚀
+
+![web3-tech](./assets/web3-tech.jpeg)
+
+Layer 1 blockchain
+➝ Ethereum
+➝ Solana
+➝ Avalanche
+
+Frontend
+➝ HTML
+➝ CSS
+➝ React.js
+
+File Storage
+➝ FileCoin
+➝ IPFS
+➝ Arweave
+
+Node Providers
+➝ Infura
+➝ Moralis
+➝ Alchemy 
+
+Client SDKs
+➝ web3. py (Python)
+➝ ether.js 
+
+Indexing/querying layer
+➝ The Graph
 
 
 

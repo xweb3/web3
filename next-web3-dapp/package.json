@@ -1,0 +1,50 @@
+{
+  "name": "next-web3-dapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.2.0",
+    "@solana/wallet-adapter-ant-design": "^0.11.4",
+    "@solana/wallet-adapter-bitkeep": "^0.3.3",
+    "@solana/wallet-adapter-bitpie": "^0.5.3",
+    "@solana/wallet-adapter-blocto": "^0.5.4",
+    "@solana/wallet-adapter-clover": "^0.4.4",
+    "@solana/wallet-adapter-coin98": "^0.5.4",
+    "@solana/wallet-adapter-coinhub": "^0.3.3",
+    "@solana/wallet-adapter-glow": "^0.1.1",
+    "@solana/wallet-adapter-huobi": "^0.1.0",
+    "@solana/wallet-adapter-ledger": "^0.9.9",
+    "@solana/wallet-adapter-material-ui": "^0.16.5",
+    "@solana/wallet-adapter-mathwallet": "^0.9.3",
+    "@solana/wallet-adapter-phantom": "^0.9.3",
+    "@solana/wallet-adapter-react": "^0.15.4",
+    "@solana/wallet-adapter-react-ui": "^0.9.6",
+    "@solana/wallet-adapter-safepal": "^0.5.3",
+    "@solana/wallet-adapter-slope": "^0.5.4",
+    "@solana/wallet-adapter-solflare": "^0.6.6",
+    "@solana/wallet-adapter-sollet": "^0.11.1",
+    "@solana/wallet-adapter-solong": "^0.9.3",
+    "@solana/wallet-adapter-tokenpocket": "^0.4.3",
+    "@solana/wallet-adapter-torus": "^0.11.11",
+    "@solana/wallet-adapter-wallets": "^0.16.0",
+    "@solana/web3.js": "^1.39.1",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "next": "12.1.5",
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.25",
+    "@types/react": "18.0.6",
+    "@types/react-dom": "18.0.2",
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.5",
+    "typescript": "4.6.3"
+  }
+}
