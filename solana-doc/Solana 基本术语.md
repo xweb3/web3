@@ -1,8 +1,51 @@
 # Solana 基本术语
 
-```
-dApp 中心化应用 (decentralization application)
+### dApp 中心化应用 (decentralization application)
 
+### TVL / Total value locked / 总锁仓价值
+
+在区块链的世界中，大部分 DeFi 活动需要引进抵押物，来确保整个生态的正常运转。这些锁定的抵押物的价值，就是 TVL 。 
+
+TVL 的多少，一定程度上可以衡量一个项目的业务规模，以及生态发展状态。
+
+
+### AMM 自动做市商模式（ Automated Market Maker ）
+
+传统交易所使用的订单薄模式
+
+自动做市商（Automated Market Maker，AMM），跟外部市场脱离！
+AMM不需要订单薄，而是一个流动性池（liquidity pool）
+人为组成并向项目中添加一个个交易对，提供交易对的人就被称为“流动性提供者”
+
+
+
+### DEX（去中心化交易所）
+
+
+## Tooling + Explorer 工具+资源管理器
+
+## Wallet 钱包
+
+## Infrastructure  基础设施
+
+## Oracle  预言机
+
+## Stablecoin 稳定币
+
+## Defi 去中心化金融（Decentralized Finance）
+
+## Gaming/NFT 游戏/指非同质化代币（Non-Fungible Token）
+
+## Application 应用
+
+## DAO 去中心化自治组织
+
+```
+swarp 交易/交换
+staking 抵押
+```
+
+```
 wallet 钱包
 keypair 钥匙对
 
@@ -93,40 +136,3 @@ warmup period
 transactions 交易
 obtain 获得，买到
 ```
-
-```
-TVL / Total value locked / 总锁仓价值
-
-在区块链的世界中，大部分 DeFi 活动需要引进抵押物，来确保整个生态的正常运转。这些锁定的抵押物的价值，就是 TVL 。 
-
-TVL 的多少，一定程度上可以衡量一个项目的业务规模，以及生态发展状态。
-```
-
-```
-AMM 自动做市商模式（ Automated Market Maker ）
-
-传统交易所使用的订单薄模式
-
-自动做市商（Automated Market Maker，AMM），跟外部市场脱离！
-AMM不需要订单薄，而是一个流动性池（liquidity pool）
-人为组成并向项目中添加一个个交易对，提供交易对的人就被称为“流动性提供者”
-
-```
-
-## Tooling + Explorer 工具+资源管理器
-
-## Wallet 钱包
-
-## Infrastructure  基础设施
-
-## Oracle  预言机
-
-## Stablecoin 稳定币
-
-## Defi 去中心化金融（Decentralized Finance）
-
-## Gaming/NFT 游戏/指非同质化代币（Non-Fungible Token）
-
-## Application 应用
-
-## DAO 去中心化自治组织
