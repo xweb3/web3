@@ -22,6 +22,9 @@ Cloudflare 是一个全球网络，旨在让您连接到互联网的一切都安
 - [partyparrot.finance](https://staging.partyparrot.finance/mint/)
 - [devnet.solana](https://api.devnet.solana.com/)
 
+
+- [Serverless Progressive Web Apps using React with Cloudflare Workers](https://blog.cloudflare.com/serverless-pwa-react-cloudflare-workers/)
+
 - [solscan](https://solscan.io/)
 - [bunnyducky](https://bunnyducky.com/)
 
