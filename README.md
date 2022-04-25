@@ -28,12 +28,11 @@ Phantom makes it safe & easy for you to store, buy, send, receive, swap tokens a
 - [solana doc](https://docs.solana.com/terminology)
 - [solana ecosystem](https://solana.com/ecosystem)
 - [solana ecosystem explore](https://solana.com/ecosystem/explore)
-
 - [智能合约](https://solidity-cn.readthedocs.io/zh/develop/introduction-to-smart-contracts.html#simple-smart-contract)
 
 
 
-### [React.js ecosystem](./Reactjs-eco.md)
+### [React.js ecosystem](./react-eco.md)
 ### [Solana ecosyetem](./solana-eco.md)
 
 
