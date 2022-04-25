@@ -45,6 +45,7 @@ Layer 2 solutions are protocols developed on top of a blockchain core network (l
 
 7) NFT - Non Fungible Token
 > NFT - 不可替代的代币
+
 Non-fungible token (NFT) denotes a particular cryptographic token that is used as a representation of a single asset. 
 Non-Fungibility means it can neither be replaced nor interchanged because it has unique properties.
 > 不可替代代币 (NFT) 表示用作单一资产表示的特定加密代币。
@@ -53,6 +54,7 @@ Non-Fungibility means it can neither be replaced nor interchanged because it has
 
 8) Ethereum Token Standards:
 > 以太坊代币标准：
+
 · ERC-20: A standard interface for fungible tokens, like voting tokens, staking tokens or virtual currencies.
 · ERC-721 - A standard interface for non-fungible tokens (NFTs).
 ·ERC-1155: allows for creating both utility tokens and Non-Fungible Tokens.
@@ -68,6 +70,7 @@ Solidity is an object-oriented programming language for implementing Smart Contr
 
 10) EVM - Ethereum Virtual Machine
 > EVM - 以太坊虚拟机
+
 Ethereum Virtual Machine is a runtime environment for executing Smart Contracts in the Ethereum blockchain. It allows a secure way of running programs that spread between machines around the world.
 > 以太坊虚拟机是用于在以太坊区块链中执行智能合约的运行时环境。它允许以一种安全的方式运行在世界各地的机器之间传播的程序。
 

@@ -1,5 +1,13 @@
 # Solana 生态
 
+- [solana foundation](https://solana.foundation/)
+
+The Solana Foundation
+>> Solana 基金会
+
+The Solana Foundation is a non-profit organization headquartered in Zug, Switzerland, dedicated to the decentralization, growth, and security of the Solana network.
+>> Solana 基金会是一个非盈利组织，总部设在瑞士楚格州，致力于索拉纳网络的分散、增长和安全。
+
 - [solscan](https://solscan.io/)
 
 Solscan是一个美国Solana区块浏览器，专注于改进其区块浏览器，已推出分析平台Solscan Analytics、还推出了新的NFT和DeFi分析功能。  

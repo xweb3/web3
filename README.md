@@ -17,6 +17,11 @@ A NON-CUSTODIAL WALLET FOR SOLANA
 
 Store, stake, swap, and send on Solana with Solflare. Available on desktop, mobile, and as a browser extension.
 
+- [phantom](https://phantom.app/)
+A friendly crypto wallet
+
+Phantom makes it safe & easy for you to store, buy, send, receive, swap tokens and collect NFTs on the Solana blockchain.
+
 
 ## sol 链 Doc
 
