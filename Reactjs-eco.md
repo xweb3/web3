@@ -7,7 +7,6 @@
 ## UI components
 - [chakra-ui](https://chakra-ui.com/guides/first-steps)
 
-
 - [@saberhq/saber-common](https://github.com/saber-hq/saber-common)
 
 
@@ -17,6 +16,29 @@ Cloudflare 是一个全球网络，旨在让您连接到互联网的一切都安
 将您的 DNS 指向 Cloudflare，只需数分钟就能保护和加速您的应用程序、API 和网站。可瞬间开启性能和安全服务。
 
 - [cloudflare](https://www.cloudflare.com/zh-cn/security/)
+
+- [workers.dev](https://workers.cloudflare.com/)
+- [ssc-dao.genesysgo.net](https://www.genesys.com/)
+- [partyparrot.finance](https://staging.partyparrot.finance/mint/)
+- [devnet.solana](https://api.devnet.solana.com/)
+
+- [solscan](https://solscan.io/)
+- [bunnyducky](https://bunnyducky.com/)
+
+- [saber](https://saber.so/)
+  - [@saberhq/use-solana]()
+
+
+- [@solana/web3.js](https://github.com/solana-labs/solana-web3.js)
+
+- [decimal.js]()
+
+
+- [zustand](https://github.com/pmndrs/zustand)
+  - [zustand demo](https://zustand-demo.pmnd.rs/)
+- [chakra ui](https://chakra-ui.com/)
+- [emotion](https://github.com/emotion-js/emotion)
+  - [emotion sh](https://emotion.sh/)
 
 
 ```
