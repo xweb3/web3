@@ -21,7 +21,7 @@ Solana 节点支持 HTTP 和 WebSocket 访问，端口及端接点 URL 如下所
 
 ## HTTP API
 
-```
+```s
 getAccountInfo：查询账号信息
 getBalance：查询账号余额
 getBlock：查询区块数据
@@ -78,8 +78,9 @@ simulateTransaction：模拟交易
 
 ## WebSocket API
 
-```
-Websocket连接概述
+```s
+# Websocket 连接概述
+
 accountSubscribe：订阅账号事件
 accountUnsubscribe：取消订阅账号事件
 logsSubscribe：订阅日志事件

@@ -1,4 +1,4 @@
-# Authorized
+# [Authorized](https://solana-labs.github.io/solana-web3.js/classes/Authorized.html)
 
 授权
 

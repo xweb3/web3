@@ -1,5 +1,9 @@
 # Solana 基本术语
 
+#### Transaction
+#### Stake
+#### Vote
+
 ### dApp 中心化应用 (decentralization application)
 
 ### TVL / Total value locked / 总锁仓价值
@@ -8,7 +12,6 @@
 
 TVL 的多少，一定程度上可以衡量一个项目的业务规模，以及生态发展状态。
 
-
 ### AMM 自动做市商模式（ Automated Market Maker ）
 
 传统交易所使用的订单薄模式
@@ -16,7 +19,6 @@ TVL 的多少，一定程度上可以衡量一个项目的业务规模，以及�
 自动做市商（Automated Market Maker，AMM），跟外部市场脱离！
 AMM不需要订单薄，而是一个流动性池（liquidity pool）
 人为组成并向项目中添加一个个交易对，提供交易对的人就被称为“流动性提供者”
-
 
 
 ### DEX（去中心化交易所）

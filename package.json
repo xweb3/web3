@@ -1,0 +1,38 @@
+{
+  "name": "@xweb3/doc",
+  "version": "1.0.2",
+  "description": "- [NFTs opensea](https://opensea.io/assets/penguin-art)  Discover, collect, and sell extraordinary NFTs",
+  "main": "index.js",
+  "scripts": {
+    "c": "git add . && git-cz",
+    "r": "standard-version && git push origin HEAD",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xweb3/web3.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xweb3/web3/issues"
+  },
+  "devDependencies": {
+    "git-cz": "^4.8.0",
+    "standard-version": "^9.3.2",
+    "@commitlint/cli": "^16.2.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "@commitlint/config-conventional": "^16.2.1"
+  },
+  "homepage": "https://github.com/xweb3/web3#readme"
+}
