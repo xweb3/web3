@@ -1,9 +1,9 @@
 import _pick from 'lodash/pick';
-// const querystring = require('querystring');
+const querystring = require('querystring');
 const qs = require('qs');
 // import qs from 'qs';
 
-import  { post } from './fetcher'
+import  { fetcher } from './fetcher'
 import { IEncoding, IRPCAction } from './types'
 
 export const baseUrl = 'http://localhost:8899'
@@ -47,7 +47,7 @@ export const getAction = async (options: IOptions) => {
   // }
   console.log('JSON.stringify(options)', JSON.stringify(options))
   try {
-    const res = await post(baseUrl, {
+    const res = await fetcher(baseUrl, {
       method: 'POST', // *GET, POST, PUT, DELETE, etc.
       // mode: 'cors', // no-cors, *cors, same-origin
       // cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -58,9 +58,8 @@ export const getAction = async (options: IOptions) => {
       },
       // redirect: 'follow', // manual, *follow, error
       // referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-      body: options // querystring.stringify(options)
+      data: JSON.stringify(options)
     }).then(response => {
-      // console.log('response', response);
       return response.data
     })
 
