@@ -45,7 +45,7 @@
 - [googleapis](//fonts.googleapis.com/css?family=Poppins:400,500,600,700&subset=latin)
 - [googletagmanager](https://www.googletagmanager.com)
 
-## png.fi
+## png
 
 - [@emotion/react](https://github.com/emotion-js/emotion)
 @emotion/styled
