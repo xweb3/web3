@@ -45,7 +45,7 @@ export const getAction = async (options: IOptions) => {
   // if (options.params) {
   //   options.params = JSON.stringify(options.params)
   // }
-  console.log('JSON.stringify(options)', qs.stringify(options))
+  console.log('JSON.stringify(options)', JSON.stringify(options))
   try {
     const res = await post(baseUrl, {
       method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -58,9 +58,9 @@ export const getAction = async (options: IOptions) => {
       },
       // redirect: 'follow', // manual, *follow, error
       // referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-      body: qs.stringify(options) // querystring.stringify(options)
+      body: options // querystring.stringify(options)
     }).then(response => {
-      console.log('response', response);
+      // console.log('response', response);
       return response.data
     })
 
