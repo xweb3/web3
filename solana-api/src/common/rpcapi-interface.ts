@@ -23,7 +23,6 @@ export class IOptionsInterface {
   @IsString()
   jsonrpc?: string;
 
-
   @ApiProperty()
   params?: any; // object | string[];
 }
