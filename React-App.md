@@ -101,9 +101,14 @@ react-window
 
 typescript
 web-vitals
+
 ### 项目框架
 - [nextjs](https://nextjs.org/)
 - [swr](https://swr.vercel.app/zh-CN)
+
+- [recharts](https://recharts.org/en-US)
+
+- [react-i18next](http://i18next.github.io/i18next-scanner/)
 
 - [tailwindcss](https://tailwindcss.com/docs/installation)
 - [headlessui](https://headlessui.dev/react/disclosure)
