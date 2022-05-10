@@ -53,6 +53,7 @@
     "passport-headerapikey": "^1.2.2",
     "passport-jwt": "^4.0.0",
     "qs": "^6.10.3",
+    "query-string": "^7.1.1",
     "ra-data-simple-rest": "^3.19.10",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",

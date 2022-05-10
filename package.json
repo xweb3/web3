@@ -28,11 +28,14 @@
     "url": "https://github.com/xweb3/web3/issues"
   },
   "devDependencies": {
-    "git-cz": "^4.8.0",
-    "standard-version": "^9.3.2",
     "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
     "cz-conventional-changelog": "^3.3.0",
-    "@commitlint/config-conventional": "^16.2.1"
+    "git-cz": "^4.8.0",
+    "standard-version": "^9.3.2"
   },
-  "homepage": "https://github.com/xweb3/web3#readme"
+  "homepage": "https://github.com/xweb3/web3#readme",
+  "dependencies": {
+    "@jup-ag/react-hook": "^1.0.0-beta.23"
+  }
 }

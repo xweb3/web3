@@ -1,5 +1,6 @@
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
-
+import { CoingeckoModule } from './modules/coingecko/coingecko.module';
+import { PngfiModule } from './modules/pngfi/pngfi.module';
 import { SolanaModule } from './modules/solana/solana.module';
 // import { RedisConfigModule } from './modules/config/redis.module';
 // import { DatabaseConfigModule } from './modules/config/database.module';
@@ -8,7 +9,9 @@ import { SolanaModule } from './modules/solana/solana.module';
   imports: [
     // DatabaseConfigModule.forRoot({}),
     // RedisConfigModule,
-    SolanaModule
+    SolanaModule,
+    PngfiModule,
+    CoingeckoModule,
   ],
   controllers: [],
   providers: [],
