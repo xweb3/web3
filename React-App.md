@@ -1,4 +1,4 @@
-# Nextjs & Qiankun 实现官网
+# Nextjs 
 
 ## DODO
 
@@ -40,6 +40,10 @@
 - [decimal.js]()
 - [bignumber.js]()
 - [aes-js]()
+
+- [recharts](https://recharts.org/zh-CN/api)
+
+- [tailwindcss heroicons](https://heroicons.com/)
 
 - [beacon.min.js](https://static.cloudflareinsights.com/beacon.min.js)
 - [googleapis](//fonts.googleapis.com/css?family=Poppins:400,500,600,700&subset=latin)

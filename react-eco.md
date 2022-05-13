@@ -34,7 +34,8 @@ Cloudflare 是一个全球网络，旨在让您连接到互联网的一切都安
 
 - [@solana/web3.js](https://github.com/solana-labs/solana-web3.js)
 
-- [decimal.js]()
+- [decimal.js](http://mikemcl.github.io/decimal.js/#)
+
 
 
 - [zustand](https://github.com/pmndrs/zustand)
@@ -100,3 +101,9 @@ react-window
 typescript
 web-vitals
 ```
+
+
+## API
+
+- [coingecko](https://www.coingecko.com/)
+  - [coingecko api](https://www.coingecko.com/en/api/documentation)
