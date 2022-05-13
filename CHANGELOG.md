@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/xweb3/web3/compare/v1.3.0...v1.4.0) (2022-05-13)
+
+
+### Features
+
+* 🎸 add article ([a5c7981](https://github.com/xweb3/web3/commit/a5c798127a7da2cba998754628302e7ab434ec2e))
+
 ## [1.3.0](https://github.com/xweb3/web3/compare/v1.2.0...v1.3.0) (2022-05-07)
 
 
