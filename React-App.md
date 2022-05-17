@@ -1,4 +1,15 @@
-# Nextjs 
+# Nextjs 开发 Dapp 项目
+
+## 多语言翻译
+
+- [locize 机器翻译](https://www.locize.app/)
+- [i18next](https://www.i18next.com/)
+- [react-i18next](https://github.com/i18next/react-i18next)
+- [next-i18next](https://github.com/isaachinman/next-i18next#readme)
+
+## Next 语言
+
+- []()
 
 ## DODO
 
@@ -9,8 +20,6 @@
 - [ethereumjs-util]()
 - [ethereumjs]()
 - [ethersproject]()
-- [i18next]()
-- [react-i18next]()
 - [moment]()
 - [moment-timezone]()
 - [lodash]()
@@ -52,6 +61,7 @@
 ## png
 
 - [@emotion/react](https://github.com/emotion-js/emotion)
+
 @emotion/styled
 
 @chakra-ui/icons
