@@ -16,3 +16,9 @@
 
 
 
+- Wallets 钱包
+- Providing Liquidity  流动性   Pools / Deposit 
+- Swapping Tokens 代币交换
+- Yield farming 流动性挖矿
+
+- [什么是Yield farming？](https://zhuanlan.zhihu.com/p/340585097)
