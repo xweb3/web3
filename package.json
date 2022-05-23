@@ -1,6 +1,6 @@
 {
   "name": "@xweb3/doc",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "description": "- [NFTs opensea](https://opensea.io/assets/penguin-art)  Discover, collect, and sell extraordinary NFTs",
   "main": "index.js",
   "scripts": {
